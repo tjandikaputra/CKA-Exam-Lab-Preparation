@@ -131,7 +131,7 @@ spec:
 ```
 
 ### Tugas
-Aplikasi di dalam Pod diatur untuk mendengarkan port 8082 melalui env `APP_PORT`. Konfigurasikan Liveness Probe yang sengaja salah mengarah ke port 8080. Pod akan terus restart. Perbaiki Liveness Probe tersebut agar mengecek port 8082.
+Aplikasi di dalam Pod diatur menggunakan Liveness Probe. Perbaiki Liveness Probe tersebut
 
 ### Perintah Verifikasi Mandiri
 ```bash
