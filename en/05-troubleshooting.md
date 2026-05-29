@@ -131,7 +131,7 @@ spec:
 ```
 
 ### Task
-The container application is set to listen on port 8082 via `APP_PORT`. However, the Liveness Probe intentionally points to port 8080. The pod keeps restarting. Fix the Liveness Probe to check port 8082.
+The container application is set to listen on port 8082 via `APP_PORT`. The pod keeps restarting. Fix the Liveness Probe.
 
 ### Verification Command
 ```bash
