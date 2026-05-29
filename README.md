@@ -91,9 +91,7 @@ Contributions are what make the open source community such an amazing place to l
 
 A huge thank you to everyone who has contributed to making this mock exam better!
 
-<a href="https://github.com/tjandikaputra/cka-exam-lab-preparation/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=tjandikaputra/cka-exam-lab-preparation" alt="Contributors" />
-</a>
+[![Contributors](https://contrib.rocks/image?repo=tjandikaputra/cka-exam-lab-preparation&v=2)](https://github.com/tjandikaputra/cka-exam-lab-preparation/graphs/contributors)
 
 ## 📝 License
 
