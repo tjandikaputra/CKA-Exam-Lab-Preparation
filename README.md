@@ -47,11 +47,10 @@ We use RKE2 as it perfectly simulates a production-grade Kubernetes environment 
    ```
 *(For detailed RKE2 documentation, visit the [official RKE2 Quick Start Guide](https://docs.rke2.io/install/quickstart)).*
 
-### 3. Clone This Repository
-Once your Kubernetes cluster is `Ready`, clone this repository into your VM:
+### 3. Download the Auto-Grader Script
+Once your Kubernetes cluster is `Ready`, you only need to download the automated grading script to your VM. You can read the questions on your main computer's browser while working on the VM terminal.
 ```bash
-git clone <your-repo-url>
-cd cka-exam-lab-preparation/soal-cka
+wget https://raw.githubusercontent.com/tjandikaputra/CKA-Exam-Lab-Preparation/main/verify.sh
 chmod +x verify.sh
 ```
 
@@ -70,15 +69,11 @@ In every question markdown file, you will find a **"Verification Command"** (Per
 We have included a professional automated grading script (`verify.sh`) that evaluates your cluster state and gives you a score out of 50, exactly like real exam simulators.
 
 **How to run the auto-grader:**
-1. Give execution permission to the script:
-   ```bash
-   chmod +x verify.sh
-   ```
-2. Run the script:
+1. Execute the downloaded script:
    ```bash
    ./verify.sh
    ```
-3. The script will output `[PASS]` or `[FAIL]` for each of the 50 questions and provide a Final Score (Passing score is 66%).
+2. The script will output `[PASS]` or `[FAIL]` for each of the 50 questions and provide a Final Score (Passing score is 66%).
 
 > **⚠️ WARNING:** The `verify.sh` file contains the exact Kubernetes object properties that are expected for a correct answer. **Do not read the contents of `verify.sh`** if you want to simulate a real exam, as it will spoil the solutions for you! Use it strictly for automated grading at the end of your session.
 
